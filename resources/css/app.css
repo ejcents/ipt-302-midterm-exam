@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply font-poppins;
+}
+
+a {
+    @apply hover:text-green-800 duration-100;
+}
+
+input {
+    @apply focus:outline-none focus:ring-1 focus:ring-green-400 rounded-sm p-2 text-sm;
+}
+
+.input {
+    @apply flex flex-col gap-2;
+}
