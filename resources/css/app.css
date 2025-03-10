@@ -17,3 +17,7 @@ input {
 .input {
     @apply flex flex-col gap-2;
 }
+
+.headsMargin {
+    @apply mt-5;
+}

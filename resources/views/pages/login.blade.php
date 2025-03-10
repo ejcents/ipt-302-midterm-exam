@@ -3,15 +3,15 @@
 @section('content')
     <div class="login-container min-h-screen w-full  flex justify-center items-center">
         <div class="w-1/2 shadow-xl p-10 bg-white rounded-lg">
-            <h1 class="text-3xl font-semibold text-center">Login</h1>
+            <h1 class="text-3xl font-semibold text-center">My SuperApp Login</h1>
             <form action="{{route('login')}}" method="post" class=" flex flex-col gap-6  p-2">
                 @csrf
                 <div class="input">
-                    <label for="email">Email</label>
+                    <label for="email"></label>
                     <input class="shadow-inner rounded-xl" type="email" name="email" id="email" required placeholder="Enter your email...">
                 </div>
                 <div class="input">
-                    <label for="password">Password</label>
+                    <label for="password"></label>
                     <input class="shadow-inner rounded-xl" type="password" name="password" id="password" required placeholder="Enter your password...">
                 </div>
 
