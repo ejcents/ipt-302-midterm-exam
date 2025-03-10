@@ -3,9 +3,9 @@
 @section('content')
     <div class="flex justify-center mt-8">
         <div class="w-full max-w-4xl">
-            <h2 class="text-2xl font-bold mb-4 text-center">Sportbike Records</h2>
+            <h2 class="text-2xl font-bold text-center">Sportbike Records</h2>
 
-            <!-- Only for MANAGE RECORDS -->
+            <!-- Only for MANAGE RECORDS permissions -->
             @can('manage-records')
                 <div class="flex justify-end mb-4">
                     <a href="{{ route('sportbikes.create') }}" 
@@ -22,7 +22,7 @@
                     <table class="w-full border-collapse border border-gray-300">
                         <thead class="bg-gray-200">
                             <tr>
-                                <th class="border border-gray-300 px-4 py-2">#</th>
+                                <th class="border border-gray-300 px-4 py-2">Id #</th>
                                 <th class="border border-gray-300 px-4 py-2">Model</th>
                                 <th class="border border-gray-300 px-4 py-2">Brand</th>
                                 <th class="border border-gray-300 px-4 py-2">Year</th>
@@ -45,7 +45,7 @@
                                     <td class="border border-gray-300 px-4 py-2">{{ $sportbike->engine }}</td>
                                     <td class="border border-gray-300 px-4 py-2">{{ $sportbike->color }}</td>
 
-                                    <!-- Only users with "manage-records" can edit or delete -->
+                                    <!-- Only users with MANAGE-RECORDS can edit or delete -->
                                     @can('manage-records')
                                         <td class="border border-gray-300 px-4 py-2 flex justify-center gap-2">
                                             <a href="{{ route('sportbikes.edit', $sportbike->id) }}" 

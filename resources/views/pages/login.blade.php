@@ -3,7 +3,7 @@
 @section('content')
     <div class="login-container min-h-screen w-full  flex justify-center items-center">
         <div class="w-1/2 shadow-xl p-10 bg-white rounded-lg">
-            <h1 class="text-3xl font-semibold text-center">My SuperApp Login</h1>
+            <h1 class="text-3xl font-bold text-center">My SuperApp Login</h1>
             <form action="{{route('login')}}" method="post" class=" flex flex-col gap-6  p-2">
                 @csrf
                 <div class="input">

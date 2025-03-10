@@ -16,17 +16,13 @@
     <nav class="flex justify-between items-center">
         <div class="logo">
             <a href="{{ url('/') }}" class="text-xl font-semibold">
-                <b>My<span class="text-green-300">Super App</span></b>
+                <b>My <span class="text-green-800">SuperApp</span></b>
             </a>
         </div>
 
         <div class="flex items-center space-x-10">
             <ul class="flex space-x-10" id="link-container">
                 <li><a href="{{ url('/home') }}" id="link">Home</a></li>
-
-                @can('manage-products')
-                    <li><a href="{{ url('/products') }}" id="link">Products</a></li>
-                @endcan
 
                 @can('view-records')
                     <li><a href="{{ url('/records') }}" id="link">Records</a></li>
