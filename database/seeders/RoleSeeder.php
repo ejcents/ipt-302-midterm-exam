@@ -38,6 +38,7 @@ class RoleSeeder extends Seeder
                 'password' => bcrypt('dataentryuser'),
             ]
         );
+        
         $guestUser->assignRole($guestRole);
     }
 }

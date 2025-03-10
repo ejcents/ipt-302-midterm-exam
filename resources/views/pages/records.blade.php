@@ -22,7 +22,7 @@
                     <table class="w-full border-collapse border border-gray-300">
                         <thead class="bg-gray-200">
                             <tr>
-                                <th class="border border-gray-300 px-4 py-2">Id #</th>
+                                <th class="border border-gray-300 px-4 py-2">#</th>
                                 <th class="border border-gray-300 px-4 py-2">Model</th>
                                 <th class="border border-gray-300 px-4 py-2">Brand</th>
                                 <th class="border border-gray-300 px-4 py-2">Year</th>

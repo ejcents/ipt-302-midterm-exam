@@ -30,7 +30,7 @@ class SportbikeController extends Controller
 
         Sportbike::create($request->all());
 
-        return redirect()->route('records')->with('success', 'Sportbike added successfully!');
+        return redirect()->route('records')->with('success', 'Record added successfully!');
     }
 
     public function edit($id)
@@ -44,13 +44,13 @@ public function update(Request $request, $id)
     $sportbike = Sportbike::findOrFail($id);
     $sportbike->update($request->all());
 
-    return redirect()->route('records')->with('success', 'Sportbike updated successfully!');
+    return redirect()->route('records')->with('success', 'Record updated successfully!');
 }
 
 
     public function destroy(Sportbike $sportbike)
     {
         $sportbike->delete();
-        return redirect()->route('records')->with('success', 'Sportbike deleted successfully!');
+        return redirect()->route('records')->with('success', 'Record deleted successfully!');
     }
 }
