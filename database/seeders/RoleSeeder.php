@@ -37,7 +37,7 @@ class RoleSeeder extends Seeder
         $guestUser = User::firstOrCreate(
             ['email' => 'dataentryuser@email.com'],
             [
-                'name' => 'Efren Jacob',
+                'name' => 'Data Entry User',
                 'password' => bcrypt('dataentryuser'),
             ]
         );

@@ -5,7 +5,7 @@
     <h2 class="text-2xl font-bold mb-4 text-center">Edit Sportbike</h2>
     <form action="{{ route('sportbikes.update', $sportbike->id) }}" method="POST">
         @csrf
-        @method('PUT') <!-- ✅ Correct method for updating -->
+        @method('PUT') <!-- METHOD for updating -->
         
         <input type="text" name="model" value="{{ $sportbike->model }}" required class="w-full border p-2 mb-2">
         <input type="text" name="brand" value="{{ $sportbike->brand }}" required class="w-full border p-2 mb-2">

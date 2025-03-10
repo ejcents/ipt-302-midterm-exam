@@ -5,7 +5,7 @@
         <div class="w-full max-w-4xl">
             <h2 class="text-2xl font-bold mb-4 text-center">Sportbike Records</h2>
 
-            <!-- ✅ Only users with "manage-records" permission can add new sportbikes -->
+            <!-- Only for MANAGE RECORDS -->
             @can('manage-records')
                 <div class="flex justify-end mb-4">
                     <a href="{{ route('sportbikes.create') }}" 
@@ -29,7 +29,7 @@
                                 <th class="border border-gray-300 px-4 py-2">Engine</th>
                                 <th class="border border-gray-300 px-4 py-2">Color</th>
 
-                                <!-- ✅ Only admins will see "Actions" column -->
+                                <!-- Only admins will see ACTIONS column -->
                                 @can('manage-records')
                                     <th class="border border-gray-300 px-4 py-2">Actions</th>
                                 @endcan
@@ -45,7 +45,7 @@
                                     <td class="border border-gray-300 px-4 py-2">{{ $sportbike->engine }}</td>
                                     <td class="border border-gray-300 px-4 py-2">{{ $sportbike->color }}</td>
 
-                                    <!-- ✅ Only users with "manage-records" can edit or delete -->
+                                    <!-- Only users with "manage-records" can edit or delete -->
                                     @can('manage-records')
                                         <td class="border border-gray-300 px-4 py-2 flex justify-center gap-2">
                                             <a href="{{ route('sportbikes.edit', $sportbike->id) }}" 
